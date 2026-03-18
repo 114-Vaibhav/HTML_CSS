@@ -17,6 +17,7 @@ body {
     height: 400px;
     background-color: #fff;
     border-radius: 15px;
+    border: #bab9b9 solid 1px;
     overflow: hidden;
 }
 

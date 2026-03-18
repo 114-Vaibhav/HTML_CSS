@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border: #333 solid 1px;
+    border-radius: 5px;
+    background-color: #aca9a9;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 5px;
+    border: #333 solid 1px;
+    margin: 25px;
+}
+
+.overlap {
+    order: 2;
+    background-color: #928e8e;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    border: #333 solid 1px;
+    margin: 5px;
+}
+
+.overlap-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    border: #333 solid 1px;
+    margin: 5px;
+}
+
+.box1 {
+    position: relative;
+    z-index: 1;
+}
+
+.box2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        order: 2;
+    }
+
+    .overlap {
+        order: 1;
+    }
+}

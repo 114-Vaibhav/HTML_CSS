@@ -6,10 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabbed Content Interface
     </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Tabbed Content Interface</h1>
+    <input type="radio" name="navbar" id="home" checked>
+    <input type="radio" name="navbar" id="about">
+    <input type="radio" name="navbar" id="contact">
+
+    <nav>
+        <ul>
+            <li>
+                <label for="home">Home</label>
+            </li>
+            <li>
+                <label for="about">About</label>
+            </li>
+            <li>
+                <label for="contact">Contact</label>
+            </li>
+        </ul>
+    </nav>
+    <section class="home">
+        <h2>Home</h2>
+        <p>Welcome to our website! This is the home tab content.</p>
+    </section>
+    <section class="about">
+        <h2>About</h2>
+        <p>Learn more about our company and what we do.</p>
+    </section>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with us through our contact form.</p>
+    </section>
+
 </body>
 
 </html>
